@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ProMat</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="materias">Gestionar Notas</string><!-- Control de cambio: Materias->Gestionar Notas -->
+    <string name="promedio">Promedio</string>
+    <string name="asignaturas">Asignaturas</string>
+    <string name="creditos">Créditos</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="nombre">Asignatura</string>
+    <string name="num_creditos"></string>
+    <string name="promedio_deseado">Prom. deseado</string>
+    <string name="notas">Notas</string>
+    <string name="porcentaje">Porcentaje</string>
+    <string name="calcular">Calcular</string>
+    <string name="nulo"></string>
+    <string name="creditos_cursados">"Créditos cursados: "</string>
+    <string name="promedio_acumulado">"Promedio acumulado: "</string>
+    <string name="gestionar_materias_notas">Gestionar\nmaterias y notas</string>
+    <string name="gestionar_notas">Gestionar Notas</string>
+    <string name="nota_deseada">"Nota deseada: "</string>
+    <string name="valor_creditos_cursados"></string>
+    <string name="valor_promedio_acumulado"></string>
+    <string name="borrar_base_de_datos">Borrar datos</string>
+    <string name="valor_creditos_cursados_default"></string>
+    <string name="valor_promedio_acumulado_default"></string>
+    <string name="promedio_semestral_requerido">Prom. Sem. Requerido</string>
+    <string name="value12">12</string>
+    <string name="value13">13</string>
+    <string name="value14">14</string>
+    <string name="value15">15</string>
+    <string name="value16">16</string>
+    <string name="value17">17</string>
+    <string name="value18">18</string>
+    <string name="result12"></string>
+    <string name="result13"></string>
+    <string name="result14"></string>
+    <string name="result15"></string>
+    <string name="result16"></string>
+    <string name="result17"></string>
+    <string name="result18"></string>
+    <string name="seleccione_asignaturas">Seleccione aquí las asignaturas que está cursando:</string>
+    <string name="ingresar_materia">Ingresar materia</string>
+
+</resources>

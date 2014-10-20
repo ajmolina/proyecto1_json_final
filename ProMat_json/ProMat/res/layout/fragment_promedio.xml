@@ -1,0 +1,195 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mobile.promat.MainActivity$PlaceholderFragment" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp" >
+
+        <TextView
+            android:id="@+id/txtPromedioDeseado"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/promedio_deseado"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/editPromedioDeseado"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_weight="1" >
+
+            <requestFocus />
+        </EditText>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txtCreditosCursados"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/creditos_cursados"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/txtValorCreditosCursados"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/valor_creditos_cursados"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="1" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txtPromedioAcumulado"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/promedio_acumulado"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/txtValorPromedioAcumulado"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/valor_promedio_acumulado"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="1" />
+
+    </TableRow>
+
+    <!-- 
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/editMateria1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="none"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/editNotasMateria1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_weight="1" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/editMateria2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="none"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/editNotasMateria2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_weight="1" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/editMateria3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="none"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/editNotasMateria3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_weight="1" />
+
+    </TableRow>
+ -->
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ListView
+            android:id="@+id/listViewAsignaturas"
+            android:layout_width="0dp"
+            android:layout_height="260dp"
+            android:layout_weight="1"
+            android:smoothScrollbar="true" >
+        </ListView>
+
+    </TableRow>
+ 
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txtNull"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/nulo"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnCalcularPromAcum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/calcular"
+            android:onClick="calcularPromedioAcumulado"
+            android:layout_weight="1"
+            android:background="@color/green01"
+        	android:textColor="#ffffff" />
+
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,104 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+   	android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TableLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mobile.promat.MainActivity$PlaceholderFragment" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txtSeleccioneAsignaturas"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/seleccione_asignaturas"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Spinner
+                android:id="@+id/spinnerAsignaturasServidor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarStyle" >
+
+            <TextView
+                android:id="@+id/txtCreditosSeleccion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:text="@string/creditos" />
+
+            <EditText
+                android:id="@+id/editCreditosSeleccion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+            <Button
+                android:id="@+id/btnIngresarMateria"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="ingresarAsignaturaDelServidor"
+                android:text="@string/ingresar_materia"
+                android:background="@color/blue01"
+        		android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/btnGestionarNotas"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="verVistaAsignaturas"
+                android:text="@string/gestionar_notas"
+                android:background="@color/orange01"
+       			android:textColor="#ffffff" />
+
+            
+
+        </TableRow>
+
+</TableLayout>
+    
+    
+</LinearLayout>
+
+

@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="mobile.promat.MainActivity$PlaceholderFragment" >
+
+    <Button
+        android:id="@+id/btnMaterias"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:text="@string/gestionar_materias_notas"
+        android:onClick="verVistaSeleccionAsignaturas"
+        android:background="@color/purple01"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnPromedio"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="@string/promedio"
+        android:onClick="verVistaPromedio"
+        android:background="@color/purple01"
+        android:textColor="#ffffff" />
+
+</LinearLayout>
